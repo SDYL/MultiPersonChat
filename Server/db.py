@@ -13,12 +13,12 @@ class DB(object):
                             port=DB_PORT)
 
         # 获得游标
-        self.cursor = self.cursor()
+        self.cursor = self.conn.cursor()
 
     def get_one(self, sql):
         """执行sql查询"""
         # 执行sql语句
-        self.cursor.evecute(sql)
+        self.cursor.execute(sql)
         # 查询结果
         query_result = self.cursor.fetchone()
         if not query_result:
