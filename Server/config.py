@@ -18,3 +18,4 @@ REQUEST_CHAT = '0002'           # 聊天请求
 RESPONSE_LOGIN_RESULT = '1001'  # 登录结果响应
 RESPONSE_CHAT = '1002'          # 聊天响应
 DELIMITER = '|'                 # 自定义协议数据分隔符
+#
